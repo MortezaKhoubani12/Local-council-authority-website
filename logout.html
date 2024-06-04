@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+</head>
+<body>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCvBRlhxfrp6NcCqrFlDHUEfo0tBiTZ2zY",
+            authDomain: "morteza-ass-site.firebaseapp.com",
+            databaseURL: "https://morteza-ass-site-default-rtdb.firebaseio.com",
+            projectId: "morteza-ass-site",
+            storageBucket: "morteza-ass-site.appspot.com",
+            messagingSenderId: "861361010323",
+            appId: "1:861361010323:web:b3aa8c9c01cb35c37a3f66",
+            measurementId: "G-CJ90FEV3W8",
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        signOut(auth).then(() => {
+            // sessionStorage.removeItem("isLoggedIn"); // for use second way
+            sessionStorage.removeItem("userFirstName");
+            sessionStorage.removeItem("userLastName");
+            // Redirect to home page after logout
+            window.location.href = "index.html";
+            // for use second way
+            // document.getElementById('login_link').style.display = 'block';
+            // document.getElementById('register_link').style.display = 'block';
+            // document.getElementById('logout_link').style.display = 'none';
+            // document.getElementById('welcomeMessage').style.display = 'none';
+
+        }).catch((error) => {
+            console.error("Error logging out:", error);
+        });
+    </script>
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+</html>

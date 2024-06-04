@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
     <link rel="stylesheet" href="./assets/css/styles.min.css">
-    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/ItalyCouncilLogo.png">
 <!--    Because we import them in script.js so no need to load here-->
 <!--    use <import> instead of <script> because of Firebase version-->
 <!--    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>-->
@@ -20,9 +20,11 @@
     <header class="d-flex flex-column justify-content-between" id="hero">
       <div id="hero-top" style="opacity: 1; transform: scale(1); background: var(--bs-navbar-disabled-color);border-color: var(--bs-navbar-disabled-color);">
 
-        <nav class="navbar navbar-expand-md bg-transparent shadow" style="backdrop-filter: opacity(1);opacity: 1;filter: grayscale(0%);background: var(--bs-navbar-disabled-color);height: 125px;font-size: 16px;padding: 10px 20px;padding-left: 12px;padding-right: 12px;">
+        <nav class="navbar navbar-expand-md bg-transparent shadow"
+             style="backdrop-filter: opacity(1);opacity: 1;filter: grayscale(0%);background: var(--bs-navbar-disabled-color);height: 125px;font-size: 16px;padding: 10px 20px;padding-left: 12px;padding-right: 12px;">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" style="width: 200px;height: 108px;margin: 4px;padding: 5px 0;background: url(assets/img/ItalyCouncilLogo.png) center / contain no-repeat;border-style: hidden;opacity: 1;filter: brightness(100%) contrast(100%) saturate(100%);"></a>
+            <a class="navbar-brand" href="index.html"
+               style="width: 200px;height: 108px;margin: 4px;padding: 5px 0;background: url(assets/img/ItalyCouncilLogo.png) center / contain no-repeat;border-style: hidden;opacity: 1;filter: brightness(100%) contrast(100%) saturate(100%);"></a>
 
             <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
               <span class="visually-hidden">Toggle navigation</span>
@@ -32,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navcol-1">
               <ul class="navbar-nav mx-auto" style="font-family: Montserrat, sans-serif;font-size: 16px;">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Services</a>
+                  <a class="nav-link" href="#">Services</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Events</a>
@@ -55,7 +57,7 @@
                   <span id="userFullName" class="nav-link mouse-change"></span>
                   <div id="dropdownMenu" class="dropdown-menu">
                         <a href="#" class="dropdown-item">Dashboard</a>
-                        <a href="#" class="dropdown-item">Debt Inquery</a>
+                        <a href="#" class="dropdown-item">Debt Inquiry</a>
                         <a href="#" class="dropdown-item">Requests</a>
                         <a href="#" class="dropdown-item">Inbox</a>
                         <a href="#" class="dropdown-item">Change Profile</a>
@@ -155,7 +157,7 @@
               <img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="./assets/img/museum%20opening.jpg" alt="">
             </div>
             <div class="py-4 py-lg-0 px-lg-4">
-              <h4>Reopening of Milan Museums After COVID-19</h4>
+              <h4><a href="#"  class="link-secondary" style="text-decoration: none;">Reopening of Milan Museums After COVID-19</a></h4>
               <p>After months of closure due to COVID-19, Milan museums have reopened. Visitors can now enjoy unparalleled art collections.</p>
             </div>
           </div>
@@ -166,7 +168,7 @@
               <img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="./assets/img/green%20urban%20area.jpg" alt="">
             </div>
             <div class="py-4 py-lg-0 px-lg-4">
-              <h4>Green Projects by Milan Municipality</h4>
+              <h4><a href="#"  class="link-secondary" style="text-decoration: none;">Green Projects by Milan Municipality</a></h4>
               <p>Milan Municipality has initiated new green projects to increase green spaces and reduce air pollution in the city.</p>
             </div>
           </div>
@@ -177,7 +179,7 @@
               <img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="./assets/img/cultural%20events.jpg" alt="">
             </div>
             <div class="py-4 py-lg-0 px-lg-4">
-              <h4>International Call for Cultural Development in Milan</h4>
+              <h4><a href="#"  class="link-secondary" style="text-decoration: none;">International Call for Cultural Development in Milan</a></h4>
               <p>Milan Council is hosting a global call for proposals to develop culture and arts. Artists worldwide are invited to join in this event.</p>
             </div>
           </div>
@@ -188,11 +190,15 @@
               <img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="./assets/img/education.jpg" alt="">
             </div>
             <div class="py-4 py-lg-0 px-lg-4">
-              <h4>Free Educational Programs for Young Milanese</h4>
+              <h4><a href="#"  class="link-secondary" style="text-decoration: none;">Free Educational Programs for Young Milanese</a></h4>
               <p>Milan Municipality has launched free educational programs for young Milanese to help them acquire new skills.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="text-center mx-auto">
+          <br><br>
+          <a href="#"  class="link-secondary">News archives</a>
       </div>
     </div>
   <!-- End: Projects Grid Horizontal -->
@@ -283,7 +289,7 @@
             <span class="bs-icon-sm bs-icon-rounded  d-flex justify-content-center align-items-center bs-icon me-2">
               <img src="./assets/img/ItalyCouncilLogo.png" alt="Icon" width="726" height="40">
             </span>
-            <span>Milan Council</span>
+            <span>Milan Council Authority</span>
           </div>
           <p class="text-muted copyright">Marys Row St, West Midland, Milan, Italy Postcode: B4 6NY</p>
         </div>

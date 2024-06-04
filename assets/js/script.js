@@ -86,7 +86,7 @@ function adjustDropdownPosition() {
 
     // Adjust the position of the dropdown menu
     dropdownMenu.style.right = `${window.innerWidth - rect.right}px`;
-    dropdownMenu.style.top = `${rect.bottom + 15}px`;
+    dropdownMenu.style.top = `${rect.bottom + 20}px`;
 }
 
 // Call this function whenever the dropdown is shown

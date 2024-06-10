@@ -72,6 +72,15 @@
                     <label for="floatingInput">Last Name</label>
                 </div>
                 <div class="form-floating mb-3">
+                    <label for="roleInput"></label>
+                    <select class="form-control" id="roleInput">
+                        <option value="">Choose role</option>
+                        <option value="individual">Individual</option>
+                        <option value="business">Business</option>
+                        <option value="organization">Organization</option>
+                    </select>
+                </div>
+                <div class="form-floating mb-3">
                     <label for="mobileInput"></label><input type="number" class="form-control" id="mobileInput" placeholder="" />
                     <label for="floatingInput">Mobile number</label>
                 </div>
@@ -115,6 +124,7 @@
             let passwordInput = document.getElementById("passwordInput");
             let fNameInput = document.getElementById("fNameInput");
             let lNameInput = document.getElementById("lNameInput");
+            let roleInput = document.getElementById("roleInput");
             let mobileInput = document.getElementById("mobileInput");
             let MainForm = document.getElementById("MainForm");
 
@@ -130,7 +140,8 @@
                         set(ref(db, `users/${credentials.user.uid}`), {
                             firstName: fNameInput.value,
                             lastName: lNameInput.value,
-                            mobileNumber: mobileInput.value,
+                            phoneNumber: mobileInput.value,
+                            role: roleInput.value,
                         })
                             .then(() => {
                                 // Save user details in sessionStorage
@@ -153,7 +164,6 @@
             MainForm.addEventListener("submit", RegisterUser);
         </script>
 
-<!--        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>

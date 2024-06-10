@@ -82,3 +82,11 @@
     height: 100vh; /* ارتفاع کامل صفحه */
 }
 
+select {
+    -webkit-appearance: none;
+    background-image: url('../img/dropdown-icon.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+    padding-right: 20px;
+}
